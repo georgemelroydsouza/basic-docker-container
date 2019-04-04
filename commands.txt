@@ -1,0 +1,8 @@
+docker build -t docker-george:001 .
+docker run -d -p 8000:80 -v /home/george/goj:/var/www docker-george:001
+docker ps
+docker exec -it 83602728a7cb bash
+
+
+docker stop imageid
+docker rmi -f imageid
